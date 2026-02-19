@@ -218,6 +218,7 @@ body {
     font-size: 1.8rem;
     color: var(--text-main);
     cursor: pointer;
+    margin-right: 40px;
 }
 
 .mobile-overlay {
@@ -684,6 +685,7 @@ body {
     width: 200px;
     flex-shrink: 0;
     padding-top: 15px;
+    margin-left: 15px;
 }
 
 .timeline-card {
@@ -946,46 +948,79 @@ body {
 }
 
 /* === 8. RESPONSIVE === */
+/* === 8. RESPONSIVE REFINED === */
 @media (max-width: 1024px) {
     .content-stage {
         margin-left: 0;
         width: 100%;
-        padding-top: 70px;
+        padding-top: 0; /* Handled by section padding */
     }
 
+    /* Refined Mobile Glassmorphism Header */
+    .mobile-header {
+        display: flex;
+        background: rgba(15, 15, 15, 0.85); /* Slightly transparent */
+        backdrop-filter: blur(12px); /* Glassmorphism effect */
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    [data-theme="light"] .mobile-header {
+        background: rgba(244, 244, 244, 0.85);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    /* Upgraded Sidebar Drawer */
     .sidebar {
         transform: translateX(-100%);
-        width: 280px;
-        box-shadow: 5px 0 30px rgba(0, 0, 0, 0.5);
+        width: 320px; /* Slightly wider for better touch targets */
+        box-shadow: 10px 0 40px rgba(0, 0, 0, 0.6);
+        padding: 40px 25px;
     }
 
     .sidebar.active {
         transform: translateX(0);
     }
-
-    .mobile-header {
-        display: flex;
+    
+    .nav-pill {
+        padding: 16px 20px; /* Larger touch targets */
+        font-size: 1.1rem;
     }
 
     .theme-btn {
         top: 10px;
         right: 15px;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         font-size: 1.2rem;
         z-index: 1100;
+        background: transparent;
+        border: none;
     }
 
     .page-section {
-        padding: 80px 20px;
+        padding: 80px 20px 60px;
+    }
+
+    /* Fluid Typography for Hero */
+    .hero {
+        padding-top: 70px; /* Account for fixed header */
+        min-height: 100svh; /* svh fixes mobile browser address bar layout shifts */
+        justify-content: center; /* Center content vertically on mobile */
     }
 
     .big-title {
-        font-size: 3.5rem;
+        font-size: clamp(3rem, 12vw, 5rem); /* Scales smoothly based on phone width */
+        margin-top: 20px;
+    }
+    
+    .hero-desc {
+        font-size: 1rem;
+        margin-bottom: 30px;
     }
 
     .stroke-title {
-        font-size: 3rem;
+        font-size: clamp(2.5rem, 10vw, 4rem);
     }
 
     /* Project Grid Mobile */
@@ -993,30 +1028,62 @@ body {
         grid-template-columns: 1fr;
     }
 
+    /* Mobile Arrow Animation */
+    .mobile-scroll-indicator {
+        display: flex;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        animation: mobileBounce 2s infinite ease-in-out;
+    }
+
+    .mobile-scroll-indicator a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 50%;
+        color: var(--text-main);
+        font-size: 1.5rem;
+        text-decoration: none;
+        box-shadow: var(--shadow);
+    }
+
+    @keyframes mobileBounce {
+        0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+        40% { transform: translateY(-15px) translateX(-50%); }
+        60% { transform: translateY(-7px) translateX(-50%); }
+    }
+
+    /* Modals & Forms */
     .modal-content {
-        grid-template-columns: 1fr;
         width: 95%;
         max-height: 85vh;
     }
 
     .modal-img-container {
         height: 200px;
-        min-height: auto;
     }
 
     .timeline-item {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .timeline-date {
         width: auto;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: var(--accent);
+        padding-top: 0;
     }
 
     .timeline-card {
-        padding: 20px;
+        padding: 25px 20px;
     }
 
     .timeline-line {
@@ -1025,6 +1092,7 @@ body {
 
     .timeline-dot {
         left: 0;
+        top: 10px; /* Adjust dot position to match stacked layout */
     }
 
     .timeline-wrapper {
@@ -1037,14 +1105,17 @@ body {
     }
 
     .contact-title {
-        font-size: 3rem;
+        font-size: clamp(2.5rem, 10vw, 4rem);
     }
 
+    .input-group input,
+    .input-group textarea {
+        padding: 15px 0; /* Larger touch area for typing */
+    }
+
+    /* Hide desktop-only elements */
     .cursor-dot,
-    .cursor-outline {
-        display: none;
-    }
-
+    .cursor-outline,
     #canvas-container {
         display: none;
     }
@@ -1052,6 +1123,28 @@ body {
     .hero-bg-container {
         width: 100%;
         mask-image: none;
-        opacity: 0.1;
+        -webkit-mask-image: none;
+        opacity: 0.15;
     }
+}
+
+/* Extra small devices (iPhone SE etc.) */
+@media (max-width: 380px) {
+    .stat-row {
+        gap: 20px;
+    }
+    .stat .num {
+        font-size: 2rem;
+    }
+    .card-title {
+        font-size: 1.5rem;
+    }
+    .modal-info h2 {
+        font-size: 2rem;
+    }
+}
+
+/* === NEW: Mobile Scroll Indicator Base === */
+.mobile-scroll-indicator {
+    display: none; /* Hidden on desktop */
 }

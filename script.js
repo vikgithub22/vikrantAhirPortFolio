@@ -210,3 +210,17 @@ if(window.innerWidth > 1024) {
         gsap.to(outline, { x: e.clientX - 20, y: e.clientY - 20, duration: 0.15, ease: "power2.out" });
     });
 }
+// ==========================================
+// 7. MOBILE SCROLL ARROW LOGIC
+// ==========================================
+const scrollArrow = document.querySelector('.mobile-scroll-indicator a');
+if(scrollArrow) {
+    scrollArrow.addEventListener('click', (e) => {
+        e.preventDefault();
+        gsap.to(window, {
+            duration: 1, 
+            scrollTo: {y: "#work", offsetY: 70}, // offsetY accounts for the sticky mobile header
+            ease: "power3.inOut"
+        });
+    });
+}

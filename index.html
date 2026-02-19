@@ -7,11 +7,9 @@
     <title>VIKRANT | Senior Engineer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,7 +26,7 @@
     <header class="mobile-header">
         <div class="mobile-brand">VIKRANT</div>
         <button class="menu-toggle" aria-label="Open Menu">
-            <i class="ri-menu-4-line"></i>
+            <i class="fa-solid fa-bars"></i>
         </button>
     </header>
 
@@ -48,22 +46,10 @@
                         <div class="role-badge">Software Engineer</div>
                     </div>
                 </div>
-                <!-- <div class="profile-frame">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop" 
-                         alt="Vikrant" class="profile-img">
-                </div>
-
-                <div class="brand-block">
-                    <h1 class="name">VIKRANT</h1>
-                    <div class="role-badge">Software Engineer</div>
-                </div> -->
 
                 <div class="social-rack">
                     <a href="https://github.com/vikgithub22" target="_blank" aria-label="Github"><i class="ri-github-fill"></i></a>
-                    <a href="www.linkedin.com/in/vikrant-ahir-7518a027a" target="_blank" aria-label="LinkedIn"><i
-                            class="ri-linkedin-fill"></i></a>
-                    <!-- <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
-                            class="ri-instagram-line"></i></a> -->
+                    <a href="www.linkedin.com/in/vikrant-ahir-7518a027a" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
                 </div>
             </div>
 
@@ -83,7 +69,7 @@
             </nav>
 
             <div class="sidebar-bottom">
-                <a href="/VikrantResumeF.pdf" target="_blank" class="resume-link"> 
+                <a href="/VikrantResumeF.pdf" target="_blank" class="resume-link">
                     DOWNLOAD CV <i class="ri-arrow-right-up-line"></i>
                 </a>
             </div>
@@ -94,8 +80,7 @@
             <section id="home" class="page-section hero">
 
                 <div class="hero-bg-container">
-                    <img src="https://imgs.search.brave.com/-KyVSlP-HLvmey4xflLtRyZPdVgnsM9F0DjYZieS7Gc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvODI5/NDYyNC9wZXhlbHMt/cGhvdG8tODI5NDYy/NC5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA"
-                        alt="Tech Background" class="hero-tech-img">
+                    <img src="https://images.pexels.com/photos/8294624/pexels-photo-8294624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Tech Background" class="hero-tech-img">
                 </div>
 
                 <div id="canvas-container"></div>
@@ -118,6 +103,13 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="mobile-scroll-indicator">
+                    <a href="#work" aria-label="Scroll down to projects">
+                        <i class="ri-arrow-down-line"></i>
+                    </a>
+                </div>
+
             </section>
 
             <section id="work" class="page-section work-section">
@@ -127,17 +119,9 @@
                 </div>
 
                 <div class="project-grid">
-                    <div class="project-card reveal-card" data-title="RESTAURANT FOOD APP" data-desc="Developed a secure and scalable backend using Node.js, Express.js, and MongoDB with JWT-based authentication.
-                         Implemented RESTful APIs with Express.js and optimized MongoDB queries to ensure high performance and low-latency URL retrieval.
-                         Implemented custom middleware for token validation and role-based access control.
-                         Ensured data security by integrating encrypted password storage and secure authentication flows.
-                         " data-tags="Node.js, MongoDB, ExpressJs"
-                        data-img="https://financesonline.com/uploads/2023/11/Online-food-ordering-solution-app-1-1-scaled.jpg?q=80&w=1200"
-                        data-github="https://github.com/vikgithub22/Food_app-" data-live="#">
-
+                    <div class="project-card reveal-card" data-title="RESTAURANT FOOD APP" data-desc="Developed a secure and scalable backend using Node.js, Express.js, and MongoDB with JWT-based authentication. Implemented RESTful APIs and optimized MongoDB queries." data-tags="Node.js, MongoDB, ExpressJs" data-img="https://financesonline.com/uploads/2023/11/Online-food-ordering-solution-app-1-1-scaled.jpg?q=80&w=1200" data-github="https://github.com/vikgithub22/Food_app-" data-live="#">
                         <div class="card-img-wrap">
-                            <img src="https://financesonline.com/uploads/2023/11/Online-food-ordering-solution-app-1-1-scaled.jpg?q=80&w=800"
-                                alt="Fitness" class="card-img">
+                            <img src="https://financesonline.com/uploads/2023/11/Online-food-ordering-solution-app-1-1-scaled.jpg?q=80&w=800" alt="Restaurant Food App" class="card-img">
                         </div>
                         <div class="card-content">
                             <span class="card-num">01</span>
@@ -151,16 +135,9 @@
                         </div>
                     </div>
 
-                    <div class="project-card reveal-card" data-title="FITNESS WEB-APP" data-desc="Engineered a dynamic fitness application using React, integrating Rapid API to dynamically display an exercise database categorized by muscle groups.
-                         Optimized state management through React hooks and Context API, ensuring seamless data flow and peak application performance.
-                         Utilized Material-UI to create a responsive, visually appealing interface, ensuring a consistent user experience across all devices
-                         " data-tags="ReactJs, Material-UI"
-                        data-img="https://imgs.search.brave.com/a0gnKT0h0MQqTjedMkwHOCWGwX4Hr2BcpxStJ_VLvIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzc4LzgyLzM3/LzM2MF9GXzE3ODgy/MzczNl9JOE05NVZo/TlJxZ0pwbk1kYXNl/TVdCcEpCUnZmOGpS/SC5qcGc?q=80&w=1200"
-                        data-github="https://github.com/vikgithub22/WebFitnessApp" data-live="#">
-
+                    <div class="project-card reveal-card" data-title="FITNESS WEB-APP" data-desc="Engineered a dynamic fitness application using React, integrating Rapid API to dynamically display an exercise database categorized by muscle groups. Optimized state management through React hooks." data-tags="ReactJs, Material-UI" data-img="https://imgs.search.brave.com/a0gnKT0h0MQqTjedMkwHOCWGwX4Hr2BcpxStJ_VLvIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzc4LzgyLzM3/LzM2MF9GXzE3ODgy/MzczNl9JOE05NVZo/TlJxZ0pwbk1kYXNl/TVdCcEpCUnZmOGpS/SC5qcGc?q=80&w=1200" data-github="https://github.com/vikgithub22/WebFitnessApp" data-live="#">
                         <div class="card-img-wrap">
-                            <img src="https://imgs.search.brave.com/a0gnKT0h0MQqTjedMkwHOCWGwX4Hr2BcpxStJ_VLvIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzc4LzgyLzM3/LzM2MF9GXzE3ODgy/MzczNl9JOE05NVZo/TlJxZ0pwbk1kYXNl/TVdCcEpCUnZmOGpS/SC5qcGc?q=80&w=800"
-                                alt="Forex" class="card-img">
+                            <img src="https://imgs.search.brave.com/a0gnKT0h0MQqTjedMkwHOCWGwX4Hr2BcpxStJ_VLvIs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzc4LzgyLzM3/LzM2MF9GXzE3ODgy/MzczNl9JOE05NVZo/TlJxZ0pwbk1kYXNl/TVdCcEpCUnZmOGpS/SC5qcGc?q=80&w=800" alt="Fitness App" class="card-img">
                         </div>
                         <div class="card-content">
                             <span class="card-num">02</span>
@@ -173,16 +150,9 @@
                         </div>
                     </div>
 
-                    <div class="project-card reveal-card" data-title="MENTAL-HEALTH CHATBOT" data-desc="Created a robust conversational AI system that analyzed user inputs and generated contextually relevant, empathetic responses, simulating human-like interactions.
-                         Applied advanced NLP techniques, such as sentiment analysis and entity recognition, to accurately interpret and respond to complex emotional states and queries.
-                         Worked alongside mental health professionals to ensure the chatbot met ethical guidelines and delivered clinically accurate support.
-                         " data-tags="Python, NLP"
-                        data-img="https://imgs.search.brave.com/LEe4Ucuo1M3i5Df9TSZQSWM_mpoVgzxX5_KR9q2XYmY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM4/NjY3MjE1NC9mci9w/aG90by91dGlsaXNh/dGlvbi1kdS1zeXN0/JUMzJUE4bWUtYWkt/Y2hhdGJvdC1kYW5z/LXVuLW9yZGluYXRl/dXItb3UtdW5lLWFw/cGxpY2F0aW9uLW1v/YmlsZS1wb3VyLXV0/aWxpc2VyLmpwZz9i/PTEmcz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/alBWQ21sWGd0bTQw/UmxhbHk4bzJlTXlf/NV8yNFg5V05rWkNm/clh1WE5Uaz0?q=80&w=1200"
-                        data-github="#" data-live="#">
-
+                    <div class="project-card reveal-card" data-title="MENTAL-HEALTH CHATBOT" data-desc="Created a robust conversational AI system that analyzed user inputs and generated contextually relevant, empathetic responses. Applied advanced NLP techniques like sentiment analysis." data-tags="Python, NLP" data-img="https://imgs.search.brave.com/LEe4Ucuo1M3i5Df9TSZQSWM_mpoVgzxX5_KR9q2XYmY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM4/NjY3MjE1NC9mci9w/aG90by91dGlsaXNh/dGlvbi1kdS1zeXN0/JUMzJUE4bWUtYWkt/Y2hhdGJvdC1kYW5z/LXVuLW9yZGluYXRl/dXItb3UtdW5lLWFw/cGxpY2F0aW9uLW1v/YmlsZS1wb3VyLXV0/aWxpc2VyLmpwZz9i/PTEmcz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/alBWQ21sWGd0bTQw/UmxhbHk4bzJlTXlf/NV8yNFg5V05rWkNm/clh1WE5Uaz0?q=80&w=1200" data-github="#" data-live="#">
                         <div class="card-img-wrap">
-                            <img src="https://imgs.search.brave.com/LEe4Ucuo1M3i5Df9TSZQSWM_mpoVgzxX5_KR9q2XYmY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM4/NjY3MjE1NC9mci9w/aG90by91dGlsaXNh/dGlvbi1kdS1zeXN0/JUMzJUE4bWUtYWkt/Y2hhdGJvdC1kYW5z/LXVuLW9yZGluYXRl/dXItb3UtdW5lLWFw/cGxpY2F0aW9uLW1v/YmlsZS1wb3VyLXV0/aWxpc2VyLmpwZz9i/PTEmcz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/alBWQ21sWGd0bTQw/UmxhbHk4bzJlTXlf/NV8yNFg5V05rWkNm/clh1WE5Uaz0?q=80&w=800"
-                                alt="ERP" class="card-img">
+                            <img src="https://imgs.search.brave.com/LEe4Ucuo1M3i5Df9TSZQSWM_mpoVgzxX5_KR9q2XYmY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM4/NjY3MjE1NC9mci9w/aG90by91dGlsaXNh/dGlvbi1kdS1zeXN0/JUMzJUE4bWUtYWkt/Y2hhdGJvdC1kYW5z/LXVuLW9yZGluYXRl/dXItb3UtdW5lLWFw/cGxpY2F0aW9uLW1v/YmlsZS1wb3VyLXV0/aWxpc2VyLmpwZz9i/PTEmcz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/alBWQ21sWGd0bTQw/UmxhbHk4bzJlTXlf/NV8yNFg5V05rWkNm/clh1WE5Uaz0?q=80&w=800" alt="Mental Health Chatbot" class="card-img">
                         </div>
                         <div class="card-content">
                             <span class="card-num">03</span>
@@ -195,15 +165,9 @@
                         </div>
                     </div>
 
-                    <div class="project-card reveal-card" data-title="RAILWAY ANNOUNCEMENT SYSTEM"
-                        data-desc="A Railway Announcement System using Python is a software application that automatically generates and plays train-related announcements (arrivals, departures, delays, platform changes, etc.) in railway stations. It replaces or assists manual announcements."
-                        data-tags="PYTHON, gTTS, pydub"
-                        data-img="https://vikrant-ahir.vercel.app/static/media/announce.52e6d5c1a6742709f47c.jpg?q=80&w=1200"
-                        data-github="https://github.com/vikgithub22/RailwayAnnouncement" data-live="#">
-
+                    <div class="project-card reveal-card" data-title="RAILWAY ANNOUNCEMENT SYSTEM" data-desc="A Railway Announcement System using Python is a software application that automatically generates and plays train-related announcements in railway stations." data-tags="PYTHON, gTTS, pydub" data-img="https://vikrant-ahir.vercel.app/static/media/announce.52e6d5c1a6742709f47c.jpg?q=80&w=1200" data-github="https://github.com/vikgithub22/RailwayAnnouncement" data-live="#">
                         <div class="card-img-wrap">
-                            <img src="https://vikrant-ahir.vercel.app/static/media/announce.52e6d5c1a6742709f47c.jpg?q=80&w=800"
-                                alt="AI" class="card-img">
+                            <img src="https://vikrant-ahir.vercel.app/static/media/announce.52e6d5c1a6742709f47c.jpg?q=80&w=800" alt="Railway AI" class="card-img">
                         </div>
                         <div class="card-content">
                             <span class="card-num">04</span>
@@ -234,41 +198,23 @@
                         <div class="timeline-card">
                             <h3>Software Developer</h3>
                             <h4>Inquizity Metanoia</h4>
-
                             <ul class="exp-list">
-                                <li>
-                                    Developed and maintained responsive, high-performance front-end applications using
-                                    <strong>Angular 18</strong>, improving overall usability and user engagement.
-                                </li>
-                                <li>
-                                    Integrated complex backend services using <strong>C# (.NET)</strong> and
-                                    <strong>Java</strong>, and performed database operations using
-                                    <strong>SQL</strong>, ensuring seamless data flow and application stability.
-                                </li>
-                                <li>
-                                    Implemented server-rendered UI components with <strong>Razor (.cshtml)</strong>
-                                    for product features, linking views to backend endpoints and improving render
-                                    performance and SEO.
-                                </li>
-                                <li>
-                                    Actively participated in code reviews, bug fixing, and performance tuning to enhance
-                                    application reliability and maintainability.
-                                </li>
+                                <li>Developed and maintained responsive, high-performance front-end applications using <strong>Angular 18</strong>, improving overall usability and user engagement.</li>
+                                <li>Integrated complex backend services using <strong>C# (.NET)</strong> and <strong>Java</strong>, and performed database operations using <strong>SQL</strong>.</li>
+                                <li>Implemented server-rendered UI components with <strong>Razor (.cshtml)</strong> for product features.</li>
+                                <li>Actively participated in code reviews, bug fixing, and performance tuning.</li>
                             </ul>
-
-                           <div class="tech-stack-mini">
-    <span class="tech angular"><i class="fa-brands fa-angular"></i> Angular 18</span>
-    <span class="tech dotnet"><i class="fa-brands fa-microsoft"></i> C# (.NET)</span>
-    <span class="tech java"><i class="fa-brands fa-java"></i> Java</span>
-    <span class="tech sql"><i class="fa-solid fa-database"></i> SQL</span>
-    <span class="tech razor"><i class="fa-solid fa-code"></i> Razor</span>
-    <span class="tech micro"><i class="fa-solid fa-network-wired"></i> Microservices</span>
-    <span class="tech docker"><i class="fa-brands fa-docker"></i> Docker</span>
-</div>
-
+                            <div class="tech-stack-mini">
+                                <span class="tech angular"><i class="fa-brands fa-angular"></i> Angular 18</span>
+                                <span class="tech dotnet"><i class="fa-brands fa-microsoft"></i> C# (.NET)</span>
+                                <span class="tech java"><i class="fa-brands fa-java"></i> Java</span>
+                                <span class="tech sql"><i class="fa-solid fa-database"></i> SQL</span>
+                                <span class="tech razor"><i class="fa-solid fa-code"></i> Razor</span>
+                                <span class="tech micro"><i class="fa-solid fa-network-wired"></i> Microservices</span>
+                                <span class="tech docker"><i class="fa-brands fa-docker"></i> Docker</span>
+                            </div>
                         </div>
                     </div>
-
 
                     <div class="timeline-item reveal-card">
                         <div class="timeline-dot"></div>
@@ -276,33 +222,19 @@
                         <div class="timeline-card">
                             <h3>Intern</h3>
                             <h4>QSpiders</h4>
-
                             <ul class="exp-list">
-                                <li>
-                                    Completed hands-on training and internship focused on
-                                    <strong>Java</strong>, <strong>React</strong>, and <strong>SQL</strong>,
-                                    strengthening full-stack development skills.
-                                </li>
-                                <li>
-                                    Built and deployed mini-projects integrating front-end and back-end
-                                    technologies for real-world application understanding.
-                                </li>
-                                <li>
-                                    Collaborated with mentors and peers to debug issues, optimize code,
-                                    and enhance database performance.
-                                </li>
+                                <li>Completed hands-on training and internship focused on <strong>Java</strong>, <strong>React</strong>, and <strong>SQL</strong>.</li>
+                                <li>Built and deployed mini-projects integrating front-end and back-end technologies.</li>
+                                <li>Collaborated with mentors and peers to debug issues and optimize code.</li>
                             </ul>
-
                             <div class="tech-stack-mini">
-    <span class="tech java"><i class="fa-brands fa-java"></i> Java</span>
-    <span class="tech react"><i class="fa-brands fa-react"></i> React</span>
-    <span class="tech sql"><i class="fa-solid fa-database"></i> SQL</span>
-    <span class="tech fullstack"><i class="fa-solid fa-layer-group"></i> Full-Stack</span>
-</div>
-
+                                <span class="tech java"><i class="fa-brands fa-java"></i> Java</span>
+                                <span class="tech react"><i class="fa-brands fa-react"></i> React</span>
+                                <span class="tech sql"><i class="fa-solid fa-database"></i> SQL</span>
+                                <span class="tech fullstack"><i class="fa-solid fa-layer-group"></i> Full-Stack</span>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -311,7 +243,7 @@
                     <div class="contact-info reveal-text">
                         <h2 class="contact-title">LET'S BUILD<br>THE FUTURE.</h2>
                         <p class="contact-sub">Have a project in mind? Let's discuss.</p>
-                        <a href="mailto:vikrant@mail.com" class="email-link">vikrant1@gmail.com</a>
+                        <a href="mailto:vikrant1@gmail.com" class="email-link">vikrantahir1@gmail.com</a>
                         <div class="contact-footer">
                             <span>Rasayani, Maharashtra</span>
                             <span>&copy; 2026 Vikrant</span>
@@ -362,10 +294,8 @@
                     <div id="m-tags" class="modal-tags"></div>
                     <p id="m-desc">Description</p>
                     <div class="modal-links">
-                        <a href="#" id="m-live" class="btn-modal primary" target="_blank">Live Demo <i
-                                class="ri-arrow-right-up-line"></i></a>
-                        <a href="#" id="m-github" class="btn-modal secondary" target="_blank">GitHub <i
-                                class="ri-github-fill"></i></a>
+                        <a href="#" id="m-live" class="btn-modal primary" target="_blank">Live Demo <i class="ri-arrow-right-up-line"></i></a>
+                        <a href="#" id="m-github" class="btn-modal secondary" target="_blank">GitHub <i class="ri-github-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -378,5 +308,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
